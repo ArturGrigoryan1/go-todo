@@ -24,7 +24,9 @@ jobs:
         with: 
           context: "."
           tags: "go-todo"
-          file: "Dockerfile" 
+          file: "Dockerfile"
+      - name: "stugel"
+        run : docker images
           
   docker-login:
     runs-on: 
