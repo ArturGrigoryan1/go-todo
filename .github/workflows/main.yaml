@@ -8,7 +8,7 @@ on:
     
 
 jobs:
-  hello-world:
+  docker-build:
     runs-on: 
       - ubuntu-latest
 
@@ -24,6 +24,20 @@ jobs:
         with: 
           context: "."
           tags: "go-todo"
-          file: "Dockerfile"
+          file: "Dockerfile" 
+          
+  docker-login:
+    runs-on: 
+      - ubuntu-latest
+    
+    steps:
+      - name: "docker login"
+        uses: docker/login-action@v3.1.0
+      
+    
+
+    
+     
+            
           
     
