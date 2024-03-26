@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v5.3.0
         with: 
           context: "."
-          tags: "${{ github.sha }}"
+          tags: "$go-todo"
           file: "Dockerfile"
           
     
